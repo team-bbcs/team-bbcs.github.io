@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand|Pacifico" rel="stylesheet">
+
+<style>
+.body {
+  background-color: #E6E6FA;
+  position: relative;
+}
+.heading {
+  font-family: 'Saira', sans-serif;
+  text-shadow: 1px 1px red;
+  font-size: 70px;
+}
+.panel {
+  width: 450px !important;
+  margin: 0 auto;
+  position: relative;
+
+  border-radius: 50px;
+}
+#panel {
+  border-radius: 40px;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.panel-body {
+  color: black;
+}
+#output {
+  margin: 0 auto;
+  font-size: 30px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+#panel2 {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 60%;
+  border-radius: 10px;
+  margin-top: 6%;
+}
+.column1 {
+  margin-top: 5%;
+  margin-left: 5%;
+  border-radius: 10px;
+  width: 70px;
+
+  height: 50px;
+}
+.row2 {
+  margin-top: 5%;
+}
+.column2 {
+  width: 100px;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 10px;
+
+  height: 50px;
+}
+.column3 {
+  margin-top: 6%;
+  border-radius: 10px;
+  width: 70px;
+  margin-right: 2px;
+  height: 65px;
+}
+.column4 {
+  margin-left: 5%;
+  float: left;
+  border-radius: 10px;
+  width: 70px;
+  height: 65px;
+}
+.Rishabh {
+  font-family: 'Pacifico', cursive;
+  font-size: 200%;
+}
+.rbcolor {
+  color: hotpink;
+}
+.output1 {
+  margin-left: 10%;
+  font-family: 'Lato', sans-serif;
+
+  font-size: 300%;
+}
+</style>
+</head>
+
+
+<body class="body">
+  <h1 class="text-center heading">
+    Digital Calculator
+  </h1>
+  <div class="container-fluid">
+    <div class="container text-center">
+
+      <br>
+      <div class="panel panel-primary" id="panel">
+        <div class="panel-heading" id="panel">
+          <div class="row">
+            <div class="panel panel-default" id="panel2">
+              <div class="panel-heading text-right" id="output"></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="row"><button type="button" id="AC" class="btn btn-danger column4">AC</button>
+            <h4 class="output1" id="output1"></h4>
+          </div>
+          <div class="row">
+            <button type="button" id="1" class="btn btn-primary column1" value="1">1</button>
+            <button type="button" id="2" class="btn btn-primary column1 " value="2">2</button>
+            <button type="button" id="3" class="btn btn-primary column1 yooo" value="3">3</button>
+            <button type="button" value="+" id="plus" class="btn btn-info column2 "><h4>+</h4></button>
+
+          </div>
+          <div class="row row2">
+            <button type="button" id="4" class="btn btn-primary column1" value="4">4</button>
+            <button type="button" id="5" class="btn btn-primary column1 " value="5">5</button>
+            <button type="button" id="6" class="btn btn-primary column1 " value="6">6</button>
+            <button type="button" id="-" class="btn btn-info column2 " value="-"><h4>-</h4></button>
+
+          </div>
+          <div class="row row2">
+            <button type="button" value="7" id="7" class="btn btn-primary column1">7</button>
+            <button type="button" id="8" class="btn btn-primary column1 " value="8">8</button>
+            <button type="button" id="9" class="btn btn-primary column1 " value="9">9</button>
+            <button type="button" id="x" value="*" class="btn btn-info column2 "><h4>x</h4></button>
+          </div>
+          <div class="row row2">
+            <button type="button" id="dot" class="btn btn-primary column1" value=".">.</button>
+            <button type="button" id="0" class="btn btn-primary column1 " value="0">0</button>
+            <button type="button" id="=" value="=" class="btn btn-success column1 ">=</button>
+            <button type="button" id="÷" value="/" class="btn btn-info column2 "><h4>/</h4></button>
+          </div>
+        </div>
+      </div><br>
+      <h3 class="Rishabh text-center">Designed and coded by <a class= "rbcolor" target="_blank" href="https://codepen.io/rbrishabh/full/ZexRYg/">Rishabh Budhiraja</a></h3>
+    </div>
+  </div><br><br>
+<script>
+$(document).ready(function() {
+  var value = [];
+  result = "0";
+  var value1 = [];
+  sign = [];
+
+  ok = [];
+
+  value2 = [];
+  document.getElementById("output").innerHTML = result;
+  var numButton1 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "1";
+      value.push($("#1").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("1");
+      value.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+      value1.push($("#1").attr("value"));
+    }
+  };
+  var numButton2 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "2";
+      value.push($("#2").attr("value"));
+      sign.push($("#2").attr("value"));
+      value1.push($("#1").attr("value"));
+    } else {
+      $("#output").append("2");
+      value.push($("#2").attr("value"));
+      sign.push($("#2").attr("value"));
+      value1.push($("#1").attr("value"));
+    }
+  };
+  var numButton3 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "3";
+      value.push($("#3").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("3");
+      value.push($("#3").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    }
+  };
+  var numButton4 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "4";
+      value.push($("#4").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("4");
+      value.push($("#4").attr("value"));
+      sign.push($("#2").attr("value"));
+      value1.push($("#1").attr("value"));
+    }
+  };
+  var numButton5 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "5";
+      value1.push($("#1").attr("value"));
+      value.push($("#5").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("5");
+      value.push($("#5").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    }
+  };
+  var numButton6 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "6";
+      value1.push($("#1").attr("value"));
+      value.push($("#6").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("6");
+      value.push($("#6").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    }
+  };
+  var numButton7 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "7";
+      value1.push($("#1").attr("value"));
+      value.push($("#7").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("7");
+      value.push($("#7").attr("value"));
+      sign.push($("#2").attr("value"));
+      value1.push($("#1").attr("value"));
+    }
+  };
+  var numButton8 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "8";
+      value1.push($("#1").attr("value"));
+      value.push($("#8").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("8");
+      value.push($("#8").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    }
+  };
+  var numButton9 = function() {
+    if ($("#output").html() === result) {
+      document.getElementById("output").innerHTML = "9";
+      value1.push($("#1").attr("value"));
+      value.push($("#9").attr("value"));
+      sign.push($("#2").attr("value"));
+    } else {
+      $("#output").append("9");
+      value.push($("#9").attr("value"));
+      value1.push($("#1").attr("value"));
+      sign.push($("#2").attr("value"));
+    }
+  };
+  var numButton0 = function() {
+    if ($("#output").html() === result) {
+    } else {
+      $("#output").append("0");
+      value1.push($("#1").attr("value"));
+      value.push($("#0").attr("value"));
+
+      sign.push($("#0").attr("value"));
+    }
+  };
+  var numdot = function() {
+    if (value1.indexOf(".") === -1) {
+      $("#output").append(".");
+      value1.push($("#dot").attr("value"));
+      value.push($("#dot").attr("value"));
+    }
+  };
+  var numequal = function() {
+    if ($("#output").html() === result) {
+    } else {
+      ok = value.join("");
+      ok = eval(ok);
+      ok = ok.toFixed(2);
+      document.getElementById("output1").innerHTML = "<b>= " + ok + "</b>";
+      document.getElementById("output").innerHTML = result;
+      value1.length = 0;
+      value.length = 0;
+    }
+  };
+  var nummul = function() {
+    if (
+      Number.isInteger(Number(sign[sign.length - 1])) === true &&
+      sign[sign.length - 1] !== 0 &&
+      $("#output").html() !== result
+    ) {
+      value.push($("#x").attr("value"));
+      $("#output").append("x");
+      value1.length = 0;
+      sign.push("x");
+    }
+  };
+
+  var numsub = function() {
+    if (
+      Number.isInteger(Number(sign[sign.length - 1])) === true ||
+      $("#output").html() === result
+    ) {
+      if ($("#output").html() === result) {
+        document.getElementById("output").innerHTML = "-";
+        value.push($("#-").attr("value"));
+        value1.length = 0;
+        sign.push("-");
+      } else {
+        $("#output").append("-");
+        value1.length = 0;
+        value.push($("#-").attr("value"));
+
+        sign.push("-");
+      }
+    }
+  };
+  var numadd = function() {
+    if (
+      Number.isInteger(Number(sign[sign.length - 1])) === true &&
+      sign[sign.length - 1] !== 0 &&
+      $("#output").html() !== result
+    ) {
+      $("#output").append("+");
+      value.push($("#plus").attr("value"));
+      value1.length = 0;
+      sign.push("+");
+    }
+  };
+
+  var numdiv = function() {
+    if (
+      Number.isInteger(Number(sign[sign.length - 1])) === true &&
+      sign[sign.length - 1] !== 0 &&
+      $("#output").html() !== result
+    ) {
+      value.push($("#÷").attr("value"));
+      $("#output").append("÷");
+      value1.length = 0;
+      sign.push("/");
+    }
+  };
+
+  var numac = function() {
+    value.length = 0;
+    value1.length = 0;
+    document.getElementById("output").innerHTML = result;
+    document.getElementById("output1").innerHTML = "";
+  };
+
+  document.getElementById("1").onclick = numButton1;
+  document.getElementById("2").onclick = numButton2;
+  document.getElementById("3").onclick = numButton3;
+  document.getElementById("4").onclick = numButton4;
+  document.getElementById("5").onclick = numButton5;
+  document.getElementById("6").onclick = numButton6;
+  document.getElementById("7").onclick = numButton7;
+  document.getElementById("8").onclick = numButton8;
+  document.getElementById("9").onclick = numButton9;
+  document.getElementById("0").onclick = numButton0;
+  document.getElementById("dot").onclick = numdot;
+  document.getElementById("=").onclick = numequal;
+  document.getElementById("x").onclick = nummul;
+  document.getElementById("plus").onclick = numadd;
+  document.getElementById("-").onclick = numsub;
+  document.getElementById("÷").onclick = numdiv;
+
+  document.getElementById("AC").onclick = numac;
+});
+</script>
+</body>
+
+</html>

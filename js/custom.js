@@ -7,8 +7,14 @@ function scrollById(idToSrcollTo){
   'slow');
 }
 window.onscroll = function() {myFunction()};
+var x=90;
+var scrollLimiter = 50;
 function myFunction() {
-  var scrollLimiter = 50;
+  var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
+  previousPosition = currentPosition;
+  document.getElementById('imagePosition').style.left=currentPosition+"px";
+  document.getElementById('imagePosition').style.position="fixed";
+  document.getElementById('imagePosition').style.bottom=2*currentPosition+"px";
   if (document.body.scrollTop > scrollLimiter || document.documentElement.scrollTop > scrollLimiter) {
     $("#mainDescp").fadeOut();
   } else {

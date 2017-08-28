@@ -566,4 +566,13 @@ header::before {
     padding-top: 80px;
   }
 }
+/* Nav bar over, now main page */
+.startText{
+ color:white;
+  text-align: center;
+vertical-align: middle;
+font-family: 'Amatic SC', cursive;
+ 
+}
+
 

@@ -3,14 +3,22 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.introBody{
+  background: url("http://all-top-wallpapers.com/wp-content/uploads/2017/03/collection-of-classy-wallpaper-on-hdwallpapers-for-wallpaper-classy.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+}
 body{
-  
+
    background-position: center center;
   background-repeat: no-repeat;
    background-attachment: fixed;
     background-size: cover;
   background-color: #020202;
-  
+
 }
 
 header {
@@ -25,9 +33,9 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 header {
@@ -577,7 +585,5 @@ header::before {
   text-align: center;
 vertical-align: middle;
 font-family: 'Amatic SC', cursive;
- 
+
 }
-
-

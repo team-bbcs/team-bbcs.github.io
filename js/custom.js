@@ -6,3 +6,12 @@ function scrollById(idToSrcollTo){
   scrollTop: $("#"+idToSrcollTo).offset().top},
   'slow');
 }
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  var scrollLimiter = 50;
+  if (document.body.scrollTop > scrollLimiter || document.documentElement.scrollTop > scrollLimiter) {
+    $("#mainDescp").fadeOut();
+  } else {
+    $("#mainDescp").show();
+  }
+}

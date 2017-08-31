@@ -592,3 +592,15 @@ font-family: 'Amatic SC', cursive;
     text-shadow: 2px 2px 4px white;
     font-size: 50px;
 }
+
+.mainPageAbout {
+    text-shadow: 2px 2px 4px white;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+}
+.aboutus{
+  font-family: 'Amatic SC', cursive;
+font-size: 35px;
+margin-left:2%;
+margin-right:1%;
+}

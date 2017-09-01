@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-body{
- background-color: blue; 
-}
+
 
 
 header {
@@ -573,7 +571,7 @@ header::before {
  color:black;
   text-align: center;
 vertical-align: middle;
-font-family: 'Amatic SC', cursive;
+font-family: 'Source Sans Pro', sans-serif;
 
 }
 .mainPageFirstLine {
@@ -586,11 +584,10 @@ font-family: 'Amatic SC', cursive;
 .mainPageAbout {
     text-shadow: 2px 2px 4px white;
     font-size: 50px;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .aboutus{
-  font-family: 'Amatic SC', cursive;
-font-size: 35px;
+font-family: 'Source Sans Pro', sans-serif;font-size: 35px;
 margin-left:2%;
 margin-right:1%;
 color:black;
@@ -599,7 +596,7 @@ color:black;
 .panel{
   margin-left:7%;
   margin-right:7%;
-  background-color:white;
+  background-color:#c5cae9;
   border-bottom-right-radius:2em;
   border-top-left-radius:2em;
   border-color: black; 
@@ -611,4 +608,5 @@ color:black;
 }
 .quote{
   margin-top: 3%;
+  font-family: 'Source Sans Pro', sans-serif;
 }

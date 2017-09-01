@@ -4,23 +4,10 @@
   box-sizing: border-box;
 }
 
-.introBody{
-  background: url("http://all-top-wallpapers.com/wp-content/uploads/2017/03/collection-of-classy-wallpaper-on-hdwallpapers-for-wallpaper-classy.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: black;
-}
 body{
-
-   background-position: center center;
-  background-repeat: no-repeat;
-   background-attachment: fixed;
-    background-size: cover;
-  background-color: #020202;
-
+ background-color: blue; 
 }
+
 
 header {
   font-size: 1.6rem;
@@ -391,9 +378,10 @@ header::before {
     padding-right: 2.4em;
     padding-left: 1.1em;
   }
+  /* After clicking our team*/
   .cd-main-nav li ul {
     height: 80px;
-    background-color: #7e4d7e;
+    background-color: #d500f9;
     /* padding left = logo size + logo left position*/
     padding: 0 5% 0 calc(5% + 124px);
     -webkit-transform: translateY(-80px);
@@ -592,7 +580,9 @@ font-family: 'Amatic SC', cursive;
     text-shadow: 2px 2px 4px white;
     font-size: 50px;
 }
-
+.mainDescp{
+  font-size: 45px !important;
+}
 .mainPageAbout {
     text-shadow: 2px 2px 4px white;
     font-size: 50px;
@@ -603,4 +593,22 @@ font-family: 'Amatic SC', cursive;
 font-size: 35px;
 margin-left:2%;
 margin-right:1%;
+color:black;
+
+}
+.panel{
+  margin-left:7%;
+  margin-right:7%;
+  background-color:white;
+  border-bottom-right-radius:2em;
+  border-top-left-radius:2em;
+  border-color: black; 
+  height: 250px;
+  
+}
+.panel-body{
+  
+}
+.quote{
+  margin-top: 3%;
 }

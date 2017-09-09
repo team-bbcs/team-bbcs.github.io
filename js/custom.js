@@ -28,12 +28,7 @@ function myFunction() {
   if(currentPosition<50){
     changePlanePosition(currentPosition);
   }
-  if (document.body.scrollTop > scrollLimiter || document.documentElement.scrollTop > scrollLimiter) {
-    $("#mainDescp").fadeOut();
-  } else {
-    $("#mainDescp").show();
-  }
-}
+ 
 function underlineChange(id){
   for(var i=0 ; i<4 ; i++){
     $("#"+"navbar_control"+"_"+sections[i]).css('text-decoration','none');

@@ -567,49 +567,30 @@ header::before {
   }
 }
 /* Nav bar over, now main page */
-.startText{
- color:black;
-  text-align: center;
-vertical-align: middle;
-font-family: 'Titillium Web', sans-serif;
-
-
-}
-.mainPageFirstLine {
-    text-shadow: 2px 2px 4px white;
-    font-size: 50px;
-}
-.mainDescp{
-  font-size: 45px !important;
-}
-.mainPageAbout {
-    text-shadow: 2px 2px 4px white;
-    font-size: 50px;
-    font-family: 'Titillium Web', sans-serif;
-
-}
-.aboutus{
-font-family: 'Titillium Web', sans-serif;
-font-size: 35px;
-margin-left:2%;
-margin-right:1%;
-color:black;
-
-}
 .panel{
   margin-left:7%;
   margin-right:7%;
   background-color:#c5cae9;
   border-bottom-right-radius:2em;
   border-top-left-radius:2em;
-  border-color: black; 
+  border-color: black;
   height: 250px;
-  
 }
 .panel-body{
-  
+
 }
 .quote{
   margin-top: 3%;
- font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+}
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+main{
+  text-align: center;
+}
+h1{
+  font-weight: bold;
+  text-shadow: 2px 2px 4px white;
 }

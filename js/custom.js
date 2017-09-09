@@ -24,18 +24,19 @@ var x=90;
 var scrollLimiter = 50;
 function myFunction() {
   var currentPosition = window.pageYOffset || document.documentElement.scrollTop;
-  Test(currentPosition);
+  underlineControl(currentPosition);
   if(currentPosition<50){
     changePlanePosition(currentPosition);
   }
- 
+}
+
 function underlineChange(id){
   for(var i=0 ; i<4 ; i++){
     $("#"+"navbar_control"+"_"+sections[i]).css('text-decoration','none');
   }
   $("#"+"navbar_control"+"_"+id).css('text-decoration','underline');
 }
-function Test(currentPosition){
+function underlineControl(currentPosition){
   for(var i=0 ; i<4 ; i++){
     if(currentPosition>=s[i]-20){
       underlineChange(sections[i]);

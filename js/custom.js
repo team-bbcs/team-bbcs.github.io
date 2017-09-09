@@ -10,14 +10,17 @@ var s={
   2:  $('#projects').offset().top,
   3:  $('#contact_us').offset().top
 };
+function scrollTo(idToSrcollTo){
+  $('html,body').animate({
+  scrollTop: $("#"+idToSrcollTo).offset().top},
+  'slow');
+}
 function scrollById(idToSrcollTo){
   $('header').toggleClass('nav-is-visible');
   $('.cd-main-nav').toggleClass('nav-is-visible');
   $('.cd-main-content').toggleClass('nav-is-visible');
   underlineChange(idToSrcollTo);
-  $('html,body').animate({
-  scrollTop: $("#"+idToSrcollTo).offset().top},
-  'slow');
+  scrollTo(idToSrcollTo);
 }
 window.onscroll = function() {myFunction()};
 var x=90;

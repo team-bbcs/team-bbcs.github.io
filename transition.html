@@ -64,10 +64,15 @@
           Get in touch!</br></br>
         </h2>
         <div class="container">
-          <form action="/action_page.php">
+          <h2 style="display:none" id="after_submitting">
+            </br></br></br></br></br></br></br></br>
+            Thanks for the opportunity to serve you.
+            </br></br></br></br></br></br></br></br>
+          </h2>
+          <form id="before_submitting">
             <div class="form-group">
               <h3>Name:</h3>
-              <input type="text" class="form-control" id="nameContact" placeholder="Enter Your Name" name="name">
+              <input type="text" placeholder="Enter Your Name" class="form-control" id="name">
             </div>
             <div class="form-group">
               <h3>Email address:</h3>
@@ -75,12 +80,12 @@
             </div>
             <div class="form-group">
               <h3>Tell us what you feel:</h3>
-              <textarea class="form-control" placeholder="Or just say Hi... " rows="5" maxlength="320" id="comment"></textarea>
+              <textarea placeholder="Or just say Hi... " class="form-control" rows="5" maxlength="320" id="comments"></textarea>
             </div>
-            <button type="submit" class="btn btn-default"><b>Serve Me</b></button>
+            <button type="button" onclick="sendDataToSheets();" class="btn btn-default"><b>Serve Me</b></button>
           </form>
-        </div>
-        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+        </div></br></br></br></br></br></br></br></br>
+        </br>
       </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

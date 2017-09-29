@@ -51,3 +51,18 @@ function changePlanePosition(currentPosition){
   document.getElementById('imagePosition').style.position="fixed";
   document.getElementById('imagePosition').style.bottom=2*currentPosition+"px";
 }
+function sendDataToSheets(){
+  var script_url = "https://script.google.com/macros/s/AKfycbxiZTWRv5Uz9o5kW1cgY1XiErupC10o1iWh9oTcyAY/exec";
+  var name = document.getElementById('name').value;
+  var email =	document.getElementById('email').value;
+  var comments = document.getElementById('comments').value;
+   var url = script_url+"?callback=ctrlq&name="+name+"&email="+email+"&comments="+comments;
+   $.ajax({
+     crossDomain: true,
+     url: url ,
+     method: "GET",
+     dataType: "jsonp"
+   });
+    document.getElementById('before_submitting').style.display="none";
+    document.getElementById('after_submitting').style.display="block";
+}

@@ -3,7 +3,7 @@
     background-image: url("m.jpg");
 
     /* Set a specific height */
-    min-height: 750px; 
+    min-height: 500px; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -11,32 +11,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
- .parallax2 {
-    /* The image used */
-    background-image: url("m2.jpg");
 
-    /* Set a specific height */
-    min-height: 750px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
- .parallax3 {
-    /* The image used */
-    background-image: url("m3.jpg");
-
-    /* Set a specific height */
-    min-height: 750px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -245,7 +221,7 @@ header::before {
   font-size: 1.8rem;
   padding: .9em 2em .9em 1em;
   border-bottom: 1px solid #33414a;
-  color: black;
+  color: #ffffff;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s;
@@ -398,7 +374,7 @@ header::before {
   .cd-main-nav .cd-subnav-trigger::before, .cd-main-nav .cd-subnav-trigger::after {
     top: 22px;
     right: 17px;
-    background-color: black;
+    background-color: #ffffff;
     /* change transform-origin to rotate the arrow */
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
@@ -610,14 +586,15 @@ header::before {
 .panel{
   margin-left:7%;
   margin-right:7%;
-  background-color:black;
-  color:white;
-  border-bottom-right-radius:6em;
-  border-top-left-radius:6em;
+  background-color:#c5cae9;
+  border-bottom-right-radius:2em;
+  border-top-left-radius:2em;
   border-color: black;
   height: 250px;
 }
+.panel-body{
 
+}
 .quote{
   margin-top: 3%;
   font-family: 'Dancing Script', cursive;
@@ -632,14 +609,4 @@ main{
 h1{
   font-weight: bold;
   text-shadow: 2px 2px 4px white;
-}
-.container1{
-  
-   width: 100%;
-  height: 1000px;
-}
-.bee{
- height:30%; 
-  left:0px;
- bottom:0px; 
 }
